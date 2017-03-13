@@ -15,11 +15,11 @@ import java.util.ArrayList;
  * @author Sean
  */
 public class Instructor extends Person {
-    int employeeNum;
-    LocalDate hireDate;
-    LocalDate birthday;
-    ArrayList<String> teachableCourse;
-    String courseCode;
+    private int employeeNum;
+    private LocalDate hireDate;
+    private LocalDate birthday;
+    private ArrayList<String> teachableCourse;
+    private String courseCode;
     
     
     public Instructor(String fName, String lName, String stAddress, String town, String state, String zipCode, LocalDate dob, int employeeNum, LocalDate hireDate) {

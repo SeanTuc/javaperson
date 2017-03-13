@@ -13,11 +13,11 @@ import java.time.Period;
  * @author Sean
  */
 public class Student extends Person {
-    String course;
-    int studentNumber;
-    LocalDate yearEnroled;
-    boolean standings;
-    LocalDate birthday;
+    private String course;
+    private int studentNumber;
+    private LocalDate yearEnroled;
+    private boolean standings;
+    private LocalDate birthday;
     
     public Student(String fName, String lName, String stAddress, String town, String state, String zipCode, LocalDate dob, String course, int studentNumber, LocalDate yearEnroled) {
         super(fName, lName, stAddress, town, state, zipCode, dob);
