@@ -114,10 +114,12 @@ public class Person {
         setPostalCode(postalCodes);
         
     }
-    /*
-    takes string and tests to see if it is 6 charcters long and that every odd one is a letter 
-    and even is a number
-    **/
+    /**
+     * takes string and tests to see if it is 6 charcters long and that every odd one is a letter 
+    * and even is a number
+     * @param postal 
+     */
+    
     public void setPostalCode (String postal){
         if (postal.length() == 6)
         {
@@ -145,8 +147,9 @@ public class Person {
     
     
     /** 
-    takes the global dob and calculates current age and returns that age
-    */
+     *takes the global dob and calculates current age and returns that age
+     * @return 
+     */
     public int getAge (){
         int age = Period.between(birthDate,LocalDate.now()).getYears();
         
@@ -154,15 +157,18 @@ public class Person {
     }
             
     /**
-    combines 4 strings streetAddress city province postalCode" into one string and returns that string
-    */
+     * combines 4 strings streetAddress city province postalCode" into one string and returns that string
+     * @return 
+     */
     public String getFullAddress(){
         return streetAddress + ", " + city + ", " + province + ", " + postalCode;  
     }
     
     /**
-    Takes the class and returns the person's full name
-    */
+     * Takes the class and returns the person's full name
+     * @return 
+     */
+    
 
     public String toString(){
         return (getFirstName() +" "+getLastName());
